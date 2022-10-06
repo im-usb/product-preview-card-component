@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    /* Primary Colors */
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    /* Neutral Colors */
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    /* Fonts */
+    --montserrat: 'Montserrat', sans-serif;
+    --fraunces: 'Fraunces', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--cream);
+}
+
+.card {
+    display: flex;
+}
+
+.product-image {
+    width: 18rem;
+    height: 28rem;
+    background-size: cover;
+    border-radius: 0.625rem 0 0 0.625rem;
+}
+
+.card-content {
+    width: 19rem;
+    height: 28rem;
+    background-color: white;
+    border-radius: 0 0.625rem 0.625rem 0;
+    padding: 2.2rem;
+    display: inline;
+}
+
+p {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1.9rem;
+}
+
+h1 {
+    font-family: var(--fraunces);
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    margin-bottom: 1.9rem;
+}
+
+.description {
+    font-family: var(--montserrat);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1.9rem;    
+}
+
+.price-info {
+    margin-bottom: 1.9rem;
+}
+.livePrice {
+    display: inline;
+    vertical-align: middle;
+    font-family: var(--fraunces);
+    font-size: 1.9rem;
+    color: var(--dark-cyan);
+    margin-right: 0.625rem;
+}
+
+.previousPrice {
+    display: inline;
+    vertical-align: middle;
+    font-family: var(--montserrat);
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: var(--dark-cyan);
+    color: white;
+    font-family: var(--montserrat);
+    border-radius: 0.3rem;
+    padding: 0.94rem 4rem;
+    border: none;
+}
+
+button img {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: hsl(158, 60%, 10%);
+}
+
